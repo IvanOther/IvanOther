@@ -4,12 +4,10 @@
 
 <br>
 
-<p align="center">
-  <b>building VANO.</b>
-</p>
+<h3 align="center">building VANO.</h3>
 
 <p align="center">
-  <sub>TypeScript · Next.js · PostgreSQL · Redis · Socket.IO</sub>
+  TypeScript · Next.js · PostgreSQL · Redis · Socket.IO
 </p>
 
 <br>
