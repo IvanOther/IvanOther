@@ -10,4 +10,12 @@
   TypeScript · Next.js · PostgreSQL · Redis · Socket.IO
 </p>
 
+<p align="center">✦ 🦋 ✦</p>
+
+<br>
+
+<p align="center">
+  <img src="./vano-card.svg" width="100%" alt="VANO — in development" />
+</p>
+
 <br>
