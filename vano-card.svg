@@ -1,57 +1,65 @@
-<svg width="1200" height="220" viewBox="0 0 1200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="220" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#07101E"/>
-      <stop offset="0.55" stop-color="#0A1022"/>
-      <stop offset="1" stop-color="#15113A"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07101C"/>
+      <stop offset="0.55" stop-color="#0A1020"/>
+      <stop offset="1" stop-color="#17123A"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="accent" x1="420" y1="50" x2="1100" y2="210" gradientUnits="userSpaceOnUse">
       <stop stop-color="#8B5CF6"/>
       <stop offset="1" stop-color="#60A5FA"/>
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <rect x="1" y="1" width="1198" height="218" rx="24" fill="url(#bg)" stroke="#26365C" stroke-width="2"/>
+  <rect x="1" y="1" width="1198" height="258" rx="22" fill="url(#bg)" stroke="#25365E" stroke-width="2"/>
 
-  <g opacity="0.85">
-    <circle cx="1030" cy="42" r="2.5" fill="#A78BFA"/>
-    <circle cx="1104" cy="68" r="1.7" fill="#60A5FA"/>
-    <circle cx="984" cy="148" r="2" fill="#C4B5FD"/>
-    <circle cx="1135" cy="151" r="2.2" fill="#818CF8"/>
-    <path d="M1074 106l4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10Z" fill="#A78BFA" filter="url(#glow)"/>
-    <path d="M1140 37l2.6 6.4L1149 46l-6.4 2.6L1140 55l-2.6-6.4L1131 46l6.4-2.6L1140 37Z" fill="#60A5FA"/>
+  <g opacity="0.9">
+    <circle cx="1033" cy="44" r="2.2" fill="#A78BFA"/>
+    <circle cx="1098" cy="67" r="1.8" fill="#60A5FA"/>
+    <circle cx="1153" cy="105" r="1.6" fill="#C4B5FD"/>
+    <circle cx="1018" cy="183" r="1.8" fill="#818CF8"/>
+    <circle cx="1125" cy="199" r="2" fill="#A78BFA"/>
+    <path d="M1076 103l4.5 11.5L1088 119l-11.5 4.5L1072 135l-4.5-11.5L1056 119l11.5-4.5L1072 103Z" fill="#A78BFA" filter="url(#softGlow)"/>
+    <path d="M1144 39l2.8 7.2L1154 49l-7.2 2.8L1144 59l-2.8-7.2L1134 49l7.2-2.8L1144 39Z" fill="#60A5FA"/>
   </g>
 
-  <g transform="translate(1008 73)" opacity="0.9" filter="url(#glow)">
-    <ellipse cx="26" cy="28" rx="20" ry="11" transform="rotate(-28 26 28)" fill="#7C3AED"/>
-    <ellipse cx="58" cy="28" rx="20" ry="11" transform="rotate(28 58 28)" fill="#6366F1"/>
-    <ellipse cx="29" cy="49" rx="14" ry="8" transform="rotate(25 29 49)" fill="#8B5CF6"/>
-    <ellipse cx="55" cy="49" rx="14" ry="8" transform="rotate(-25 55 49)" fill="#60A5FA"/>
-    <rect x="40" y="24" width="4" height="32" rx="2" fill="#DDD6FE"/>
+  <g transform="translate(1017 72)" filter="url(#softGlow)">
+    <path d="M40 36C22 5 1 8 7 31C10 43 23 50 40 46V36Z" fill="#8B5CF6" fill-opacity="0.95"/>
+    <path d="M48 36C66 5 87 8 81 31C78 43 65 50 48 46V36Z" fill="#6366F1" fill-opacity="0.95"/>
+    <path d="M40 48C21 49 13 63 22 74C29 83 39 70 43 55L40 48Z" fill="#A78BFA" fill-opacity="0.95"/>
+    <path d="M48 48C67 49 75 63 66 74C59 83 49 70 45 55L48 48Z" fill="#60A5FA" fill-opacity="0.95"/>
+    <rect x="42" y="30" width="4" height="34" rx="2" fill="#EDE9FE"/>
   </g>
 
-  <text x="54" y="92" fill="#F8FAFC" font-family="Georgia, 'Times New Roman', serif" font-size="66" letter-spacing="7">VANO</text>
-  <text x="58" y="132" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="23">web messenger</text>
+  <text x="58" y="96" fill="#F8FAFC" font-family="Georgia, 'Times New Roman', serif" font-size="68" letter-spacing="8">VANO</text>
+  <text x="60" y="137" fill="#D7DCE7" font-family="Arial, Helvetica, sans-serif" font-size="23">a new kind of web messenger</text>
+  <text x="60" y="178" fill="#B794F6" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="600">in development</text>
 
-  <rect x="56" y="151" width="198" height="38" rx="19" fill="#120F2E" stroke="url(#accent)"/>
-  <circle cx="78" cy="170" r="5" fill="#8B5CF6"/>
-  <text x="94" y="177" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="1.2">IN DEVELOPMENT</text>
+  <line x1="462" y1="50" x2="462" y2="210" stroke="#31456E" stroke-width="1.5"/>
 
-  <line x1="372" y1="46" x2="372" y2="174" stroke="#33466F"/>
-
-  <g font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#E2E8F0">
-    <text x="425" y="82">messaging</text>
-    <text x="425" y="122">realtime</text>
-    <text x="425" y="162">web</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#E6EAF2">
+    <text x="540" y="84">Real-time messaging</text>
+    <text x="540" y="132">Privacy first</text>
+    <text x="540" y="180">Built with modern technologies</text>
   </g>
 
-  <g fill="url(#accent)">
-    <circle cx="400" cy="75" r="6"/>
-    <circle cx="400" cy="115" r="6"/>
-    <circle cx="400" cy="155" r="6"/>
+  <g transform="translate(500 64)" stroke="url(#accent)" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="23" height="17" rx="6"/>
+    <path d="M7 17l-4 5v-7"/>
+    <circle cx="7" cy="8.5" r="1" fill="#A78BFA" stroke="none"/>
+    <circle cx="12" cy="8.5" r="1" fill="#A78BFA" stroke="none"/>
+    <circle cx="17" cy="8.5" r="1" fill="#A78BFA" stroke="none"/>
   </g>
+
+  <g transform="translate(502 111)" stroke="url(#accent)" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="7" width="18" height="15" rx="4"/>
+    <path d="M4 7V4.5A5 5 0 0 1 14 4.5V7"/>
+  </g>
+
+  <path d="M511 154l4.8 11.2L527 170l-11.2 4.8L511 186l-4.8-11.2L495 170l11.2-4.8L511 154Z" fill="url(#accent)"/>
+  <ellipse cx="1080" cy="136" rx="96" ry="74" fill="#6D28D9" fill-opacity="0.05"/>
 </svg>
